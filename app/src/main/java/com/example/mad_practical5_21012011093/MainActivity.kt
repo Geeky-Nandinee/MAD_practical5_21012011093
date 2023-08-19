@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun gallery() {
-        Intent(Intent.ACTION_PICK).also {
+        Intent(Intent.ACTION_PICK).setType("image/*").also {
             startActivity(it)
         }
     }
